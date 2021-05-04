@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.inner{
+    width: 75%;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    
+.bg{
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(to right, #611daf9a, #a417b1a6), rgba(7, 7, 7, 0.473);
+    background-blend-mode: overlay;
+}
+#header{
+    position: relative;
+    top: 45%;
+    color: #fff;
+}
+.bg .header-left, .bg .header-right{
+    width: 45%;
+}
+.header-left h1{
+    font-size: 2.2rem;
+    line-height: 50px;
+    font-weight: 500;
+}
+hr{
+    width:0.1px;
+    height: auto;
+    border: 0;
+    background-color: rgba(190, 190, 190, 0.795);
+
+}
+.header-right p{
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: 500;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+}
+.btn{
+    width: 140px;
+    height: 35px;
+    background: none;
+    border: 1px solid #9c9c9c;
+    color: #444343da;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
+    border-radius: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#header .btn{
+    background-color: rgb(40, 185, 153);
+    border: 0;
+    color: #fff;
+}
+/* bg ends */
+
+
+/* info starts */
+#info{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.info-left, .info-right{
+    width: 45%;
+}
+.info-left h3{
+    font-size: 1.4rem;
+    color: #444343da;
+    font-weight: 600;
+}
+.info-left p{
+    font-size: 1rem;
+    line-height: 28px;
+    color: rgb(110, 110, 110);
+    margin: 40px 0;
+}
+
+.info-right ul{
+    list-style: none;
+    color: rgb(110, 110, 110);
+}
+.info-right ul li{
+    padding-bottom: 30px;
+}
+.info-right ul li .fa{
+    color: rgb(40, 185, 153);
+    padding-right: 10px;
+}
+/* info ends */
+
+/* image section starts */
+#img-sec{
+    width: 100%;
+    background-color: #e7e7e7;
+    border-top: 1px solid #b1b1b1;
+    padding: 75px 0;
+    text-align: center;
+}
+#img-sec .img-container .text-box .btn{
+    width: 90px;
+    text-transform: uppercase;
+}
+.img-container{
+    background-color: #fff;
+    padding: 0 ;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    margin-bottom: 35px;
+    text-align: left;
+}
+.img-container .img-box img{
+    width: 100%;
+    display: block;  /*for height adjustment */
+}
+.img-container .img-box{
+    width: 40%;
+}
+.img-container .text-box{
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.img-container .text-box h4{
+    color: #444343da;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.img-container .text-box p{
+    font-size: 1rem;
+    line-height: 25px;
+    color: rgb(110, 110, 110);
+    padding-right: 4rem;
+    margin: 30px 0;
+}
+#img-sec .btn{
+    width: 180px;
+}
+#img-sec .btn:hover{
+    background-color: #fff;
+    transition: 0.6s;
+}
+
+/* image section ends */
+
+
+
+/* contact section starts */
+.contact, .social{
+    width: 45%;
+}
+#contact-sec{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.social ul li a{
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    line-height: 30px;
+}
+
+
+.social ul li{
+    padding-bottom: 25px;
+    list-style: none;
+}
+.social ul li .fa{
+    color: rgb(40, 185, 153);
+    padding-right: 10px;
+}
+
+.contact h3{
+    font-size: 1.2rem;
+    color: #444343da;
+    font-weight: 600;
+}
+.contact p{
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: rgb(110, 110, 110);
+    margin: 20px 0;
+}
+form ::placeholder{
+    color: lightgrey;
+}
+form input{
+    width: 46%;
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+}
+form textarea{
+    width: 100%;
+    height: 125px;
+    padding: 10px 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid lightgray;
+}
+
+/* contact section ends */
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #e7e7e7;
+    color: #858585;
+    padding: 50px;
+}
+
+
+
+/* media query starts */
+
+@media only screen and (max-width:991px){
+    #header{
+        top: 35%;
+    }
+    #header .header-left h1{
+        font-size: 1.8rem;
+    }
+    #header .header-right p{
+        font-size: 0.85rem;
+    }
+    .img-container .text-box h4{
+        font-size: 1rem;
+    }
+    .img-container .text-box p{
+        font-size: 0.86rem;
+        line-height: 20px;
+        padding-right: 4rem;
+        margin: 15px 0;
+    }
+    .img-container .text-box .btn{
+        font-size: 0.6rem;
+        width: 60px;
+        height: 25px;
+    }
+}
+
+
+
+@media only screen and (max-width:767px){
+    html{
+        font-size: 13px;
+    }
+    
+    .contact, .social{
+        width: 100%;
+    }
+    .contact{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width:676px){
+    html{
+        font-size: 10px;
+    }
+    #header{
+        top: 50%;
+    }
+    #header .btn{
+        width: 90px;
+        height: 30px;
+    }
+    #header .header-left h1{
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+    #header .header-right p{
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+    .img-container .text-box h4{
+        font-size: 1rem;
+    }
+    .img-container .text-box p{
+        line-height: 16px;
+        padding-right: 4rem;
+        margin: 8px 0;
+    }
+}
+
+@media only screen and (max-width:545px){
+    #header{
+        top: 20%;
+    }
+
+    #header .header-left, #header .header-right{
+        width: 100%;
+    }
+    #header hr{
+        display: none;
+    }
+
+
+
+    
+    #info .info-left, #info .info-right{
+        width: 100%;
+    }
+    #info hr{
+        display: none;
+    }
+    #info .info-left p{
+        margin: 20px 0;
+        line-height: 25px;
+    }
+    .info-right ul li{
+        padding-bottom: 15px;
+    }
+    #info .info-right{
+        margin-top: 30px;
+    }
+    #info .btn{
+        width: 100px;
+        margin-top: 0;
+    }
+
+
+
+    .img-container .img-box{
+        width: 100%;
+    }
+    .img-container .text-box{
+        justify-content: center;
+        width: 100%;
+    }
+    .img-container .text-box h4{
+        margin-top: 8px;
+        font-size: 1rem;
+    }
+    .img-container .text-box p{
+        text-align: center;
+        line-height: 16px;
+        padding: 8px ;
+        margin: 8px 0;
+    }
+    .img-container .text-box .btn{
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+}
